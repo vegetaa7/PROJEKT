@@ -1,6 +1,7 @@
 #include "podstawowe_parametry.h"
 
-PodstawoweParametry::PodstawoweParametry(std::string firmaP, int cenaAkcjiP, int wartoscP, int zyskP)
+//Przerobić odpowiednio
+WpisyBranzowe::WpisyBranzowe(std::string firmaP, int cenaAkcjiP, int wartoscP, int zyskP)
 {
 	this->firma = firmaP;
 	this->cenaAkcji=cenaAkcjiP;

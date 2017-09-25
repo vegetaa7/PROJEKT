@@ -1,6 +1,6 @@
 #include <iostream>
 
-#include "podstawowe_parametry.h"
+#include "wpisy_braznowe.h"
 
 using namespace std;
 
