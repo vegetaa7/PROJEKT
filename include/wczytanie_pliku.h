@@ -5,5 +5,5 @@ class CzytaczPliku {
 
 
 public:
-    vector<WpisyBranzowe> wczytaj(std::string sciezka);
+    vector<WpisyBranzowe> wczytaj(std::string sciezka);//j
 };

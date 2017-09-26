@@ -7,7 +7,7 @@ public:
 
 	std::string kategoria;
 	std::string nazwa
-	std::string data;
+	std::string data;//hg
 	float cenaAkcji;
 	float zmiana;
 	

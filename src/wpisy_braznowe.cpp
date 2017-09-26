@@ -5,6 +5,6 @@ WpisyBranzowe::WpisyBranzowe(std::string firmaP, int cenaAkcjiP, int wartoscP, i
 {
 	this->firma = firmaP;
 	this->cenaAkcji=cenaAkcjiP;
-	this->wartosc=wartoscP;
+	this->wartosc=wartoscP;//j
 	this->zysk=zyskP;
 }

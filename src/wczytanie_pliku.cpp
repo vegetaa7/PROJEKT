@@ -12,7 +12,7 @@ vector<string> rozdziel_linie(std::string linia)
 	{
 		wyrazy.push_back(wyraz);
 	}
-	return wyrazy;
+	return wyrazy;//m
 }
 
 vector<WpisyBranzowe> CzytaczPliku::wczytaj(std::string sciezka) {
