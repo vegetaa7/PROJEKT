@@ -12,6 +12,6 @@ int main()
 
 	// wynik czytacz dac do obrabiarki
 
-	// wypisac wektor otrzymany z obrabiarki
+	// wypisac wektor otrzymany z obrabiarki...
 	return 0;
 }
