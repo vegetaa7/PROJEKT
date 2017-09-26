@@ -34,7 +34,7 @@ vector<WpisyBranzowe> CzytaczPliku::wczytaj(std::string sciezka) {
 		 * może powiedzieć że to już jest nieczytelne
 		 */
 
-		WpisyBranzowe wb(wyrazy[0], wyrazy[1]...); // poprawić w domu
+		WpisyBranzowe wb(wyrazy[0], wyrazy[1], ?wyrazy[2], ?wyrazy[3]); // poprawić w domu
 		wektor.push_back(wb);
 	}
 	return wektor;

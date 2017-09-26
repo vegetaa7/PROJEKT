@@ -6,9 +6,12 @@ using namespace std;
 
 int main()
 {
+	//wczytac z pliku
 
-	PodstawoweParametry obj("Milenium", 1, 10, 4);
-	cout << obj.firma << endl;
-//celowa zmiana na potrzeby programu
+	// odpalic czytacz
+
+	// wynik czytacz dac do obrabiarki
+
+	// wypisac wektor otrzymany z obrabiarki
 	return 0;
 }
