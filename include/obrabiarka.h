@@ -6,5 +6,5 @@ class WpisyBranzowe;
 
 class Obrabiarka {
 public:
- vector<int> obrob(vector<WpisyBranzowe> wpisy);
+ vector<float> obrob(vector<WpisyBranzowe> wpisy);
 };
