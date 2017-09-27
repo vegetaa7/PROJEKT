@@ -1,3 +1,10 @@
+#include<vector>
+using namespace std;
+
+class CzytaczPliku;
+class WpisyBranzowe;
+
 class Obrabiarka {
-	std:: ? obrob(vector<WpisyBranzowe> wpisy);//k
+public:
+ vector<int> obrob(vector<WpisyBranzowe> wpisy);
 };

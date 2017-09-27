@@ -1,3 +1,12 @@
+#include<iostream>
+#include<vector>
+#include<string>
+#include <fstream>
+#include "obrabiarka.h"
+#include "wczytanie_pliku.h"
+#include "branze.h"
+
+
 vector<int> Obrabiarka::obrob(vector<WpisyBranzowe> wpisy) {
 
 	int cena;
@@ -12,4 +21,6 @@ vector<int> Obrabiarka::obrob(vector<WpisyBranzowe> wpisy) {
 	wynik=zmiana/cena;
 	procentowa_zmiana.push_back(wynik);
 
-}//p
+	return procentowa_zmiana;
+
+}
