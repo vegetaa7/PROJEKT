@@ -15,8 +15,20 @@ int main()
 	string sciezka;
 	cout<<"Podaj sciezke: "<<endl;
 	cin>>sciezka;
-    Obrabiarka objekt;
-	cout<<endl<<objekt.obrob(obj.wczytaj(sciezka))[0]<<endl;
+    
+	Obrabiarka objekt;
+
+	vector<WpisyBranzowe> pierwszy;	
+	vector<float> obrobka;
+	pierwszy=obj.wczytaj(sciezka);
+	
+	obrobka=objekt.obrob(pierwszy);
+
+for(int i=0;i<obrobka.size();i++){
+
+	printf("%.2f \n",obrobka[i]);//cout<<obrobka[i]<<endl;
+	
+}
 
 
 

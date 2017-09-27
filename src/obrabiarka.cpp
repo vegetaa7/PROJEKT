@@ -7,20 +7,37 @@
 #include "branze.h"
 
 
-vector<int> Obrabiarka::obrob(vector<WpisyBranzowe> wpisy) {
+vector<float> Obrabiarka::obrob(vector<WpisyBranzowe> wpisy) {
 
-	int cena;
-	int zmiana;
+	float cena[3];
+	float zmiana[3];
 	float wynik;
-	vector<int>procentowa_zmiana;
+	vector<float>procentowa_zmiana;
 
-	for(int i=0;i<wpisy.size();i++) {
-		cena+=wpisy[i].cenaAkcji;
-		zmiana+=wpisy[i].zmiana;
+	vector<WpisyBranzowe>podzial[3];
+	
+	for(int j=0;j<wpisy.size();j++){
+
+	if (wpisy[j].kategoria=="Banki")
+		podzial[0].push_back(wpisy[j]);
+	else if (wpisy[j].kategoria=="Paliwa")
+		podzial[1].push_back(wpisy[j]);
+	else if (wpisy[j].kategoria=="Budow")
+		podzial[2].push_back(wpisy[j]);
+}
+
+		
+	for(int k=0;k<3;k++){
+	
+	for(int i=0;i<podzial[k].size();i++) {
+		cena[k]+=podzial[k][i].cenaAkcji;
+		zmiana[k]+=podzial[k][i].zmiana;
 	}
-	wynik=zmiana/cena;
+	wynik=zmiana[k]/cena[k];
 	procentowa_zmiana.push_back(wynik);
-
+}
+	
+	
 	return procentowa_zmiana;
 
 }
