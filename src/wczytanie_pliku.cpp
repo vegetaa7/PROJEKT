@@ -34,11 +34,13 @@ vector<WpisyBranzowe> CzytaczPliku::wczytaj(string sciezka) {
 		nr_linii++;
 		vector<string> wyrazy = rozdziel_linie(linia);
 
-
+		
 		 WpisyBranzowe wb(wyrazy[0], wyrazy[1],stof(wyrazy[2],NULL),stof(wyrazy[3],NULL));
 		 wektor.push_back(wb);
-
+		
 
 	}
+
+	plik.close();
 	return wektor;
 }

@@ -7,4 +7,6 @@ class WpisyBranzowe;
 class Obrabiarka {
 public:
  vector<float> obrob(vector<WpisyBranzowe> wpisy);
+
+
 };

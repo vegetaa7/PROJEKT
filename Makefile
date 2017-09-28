@@ -1,2 +1,2 @@
-kompiluj: src/main.cpp src/branze.cpp src/obrabiarka.cpp src/wczytanie_pliku.cpp include/branze.h include/obrabiarka.h include/wczytanie_pliku.h
-	g++ -o Program1.exe src/main.cpp src/branze.cpp src/obrabiarka.cpp src/wczytanie_pliku.cpp -Iinclude
+kompiluj: src/main.cpp src/branze.cpp src/obrabiarka.cpp src/wczytanie_pliku.cpp src/algorytm.cpp src/wyniki.cpp src/tworze_plik.cpp include/algorytm.h include/wyniki.h include/tworze_plik.h include/branze.h include/obrabiarka.h include/wczytanie_pliku.h
+	g++ -o Program1.exe src/main.cpp src/branze.cpp src/obrabiarka.cpp src/wczytanie_pliku.cpp src/tworze_plik.cpp src/algorytm.cpp src/wyniki.cpp -Iinclude
