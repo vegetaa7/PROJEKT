@@ -5,7 +5,7 @@
 #include "obrabiarka.h"
 #include "wczytanie_pliku.h"
 #include "branze.h"
-
+#include "tworze_plik.h"
 using namespace std;
 
 int main()
@@ -24,20 +24,19 @@ int main()
 	
 	obrobka=objekt.obrob(pierwszy);
 
+//Tylko dla informacji:
 for(int i=0;i<obrobka.size();i++){
 
-	printf("%.2f \n",obrobka[i]);//cout<<obrobka[i]<<endl;
+	printf("%.2f %% \n",obrobka[i]*100);//cout<<obrobka[i]<<endl;
 	
 }
 
+Tworze_Plik plikt;
+
+plikt.tworze_do_algorytmu(obrobka);
 
 
-	//wczytac z pliku
 
-	// odpalic czytacz
 
-	// wynik czytacz dac do obrabiarki
-
-	// wypisac wektor otrzymany z obrabiarki...
 	return 0;
 }
